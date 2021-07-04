@@ -7,7 +7,7 @@ body {
 }
 @font-face {
     font-family: "Coolvetica";
-    src: url('../fonts/coolveticarg.ttf') format('truetype')
+    src: url('../font/coolveticarg.ttf') format('truetype')
 }
 .container {
     width: 100%;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #f6f2efff;
+    background-color: white;
 }
 .nav-bar {
     width: 100%;
@@ -32,7 +32,7 @@ body {
     display: inline;
     background-color: transparent;
 }
-.nav-bar .brandname {
+.nav-bar .brand-name {
     top: 0;
     float: left;
     margin: 1rem;
@@ -64,4 +64,23 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 3rem;
+}
+.btn-primary {
+    background-color: darkorchid;
+    opacity: 5;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+
+}
+.left-grid h2,
+.left-grid p
+{
+    margin: .5rem 0;
+    padding: .5rem 2rem 0 0rem;
+}
+
+.left-grid p {
+    padding-top: 0;
 }
