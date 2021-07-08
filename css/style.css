@@ -82,5 +82,66 @@ body {
 }
 
 .left-grid p {
+    font-size: 30px;
     padding-top: 0;
+}
+.btn-primary{
+    width: 50%;
+    background-color: green;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    height: 100%;
+
+}
+.btn-primary p{
+    font-size: 18px;
+    padding: .2em ,2em;
+    margin: 0;
+} 
+.btn-link {
+    margin: 0;
+}
+.right-grid {
+    width: 50%;
+    display: flex;
+    padding-right: 3em;
+}
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #f65;
+}
+.side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.toggle-btn {
+    display: none;
 }
