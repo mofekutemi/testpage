@@ -149,22 +149,23 @@ body {
     .side-nav {padding-top: 15px;}
     .side-nav a {font-size: 18px;} 
 }
-@media  screen and (max-width: 950;) {
+@media  only screen and (max-width: 950px;) {
     .nav-bar .nav-link {
         display: none;
     }
-}
-.toggle-btn {
-    display: inline;
-}
-
-@media screen and (max-width:950px) {
-    .jumbotrin {
+    .toggle-btn {
+        display: inline;
+    }
+    .jumbotron {
         flex-direction: column-reverse;
         align-items: center;
         padding: 0;
     }
     .left-grid{
+        text-align: center;
+        padding: 0;
+    }
+    .right-grid {
         text-align: center;
         padding: 0;
     }
