@@ -6,6 +6,7 @@ body {
     padding: .15em;
     flex-direction: row;
     font-size: 30px;
+    justify-content: space-evenly;
 
 }
 @font-face {
@@ -66,6 +67,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 3rem;
+    margin-left: 4rem;
 }
 .btn-primary {
     background-color: darkorchid;
@@ -85,6 +88,10 @@ body {
 .left-grid p {
     font-size: 30px;
     padding-top: 0;
+}
+.right-grid {
+    display: flex;
+    padding-right: .5em;
 }
 .btn-primary {
     background-color: green;
