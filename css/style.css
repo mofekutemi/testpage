@@ -3,7 +3,10 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: .15em;
+    flex-direction: row;
+    font-size: 30px;
+
 }
 @font-face {
     font-family: "Coolvetica";
@@ -18,7 +21,6 @@ body {
 }
 .header {
     margin: 0;
-    padding: 5px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -64,7 +66,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 3rem;
 }
 .btn-primary {
     background-color: darkorchid;
@@ -78,23 +79,21 @@ body {
 .left-grid p
 {
     margin: .5rem 0;
-    padding: .5rem 2rem 0 0rem;
+
 }
 
 .left-grid p {
     font-size: 30px;
     padding-top: 0;
 }
-.btn-primary{
-    width: 50%;
+.btn-primary {
     background-color: green;
     border-color: transparent;
     border-radius: 5px;
-    color: white;
-    height: 100%;
+    margin: 0;
 
 }
-.btn-primary p{
+.btn-primary p {
     font-size: 18px;
     padding: .2em ,2em;
     margin: 0;
@@ -102,10 +101,10 @@ body {
 .btn-link {
     margin: 0;
 }
-.right-grid {
-    width: 50%;
-    display: flex;
-    padding-right: 3em;
+
+.j-image {
+    width: 400px;
+    height: 400px;
 }
 .side-nav {
     height: 100%;
@@ -142,14 +141,15 @@ body {
     transition: margin-left .5s;
     padding: 20px;
 }
-.toggle-btn {
-    display: none;
-}
-@media  screen and (max-height: 450px;){
+@media  screen and (max-height: 450px){
     .side-nav {padding-top: 15px;}
     .side-nav a {font-size: 18px;} 
 }
-@media  only screen and (max-width: 950px;) {
+@media  only screen and (max-width: 950px) {
+    .j-image {
+        width: 250px;
+        height: 250px;
+    }
     .nav-bar .nav-link {
         display: none;
     }
@@ -161,6 +161,14 @@ body {
         align-items: center;
         padding: 0;
     }
+    .btn-link {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        }
+
+     }
+    
     .left-grid{
         text-align: center;
         padding: 0;
@@ -170,34 +178,13 @@ body {
         padding: 0;
     }
 }
-@media  only screen and (max-width: 450px;) {
+@media  only screen and (max-width: 600px) {
     .j-image {
         width: 200px;
         height: 200px;
     }
-    .left-grid {
-        font-size: 15px;
-        padding: 0;
+    .btn-primary {
+        text-align: center;
+        margin-right: 2.5rem;
     }
-    .left-grid h2,
-    .left-grid p {
-        margin: .5;
-        padding: .5;
-    }
-    .jumbotron {
-        font-size: 20px;
-        justify-content: center;
-    }
-    .left-grid h2{
-        font-size: 15px;
-        }
-        .leftgrid p {
-            font-size: 15px;
-            padding-top: 0;
-        }
-        .btn-primary {
-            text-align: center;
-            margin-right: 2.5rem;
-        }
 }
-
