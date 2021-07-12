@@ -182,8 +182,13 @@ body {
         justify-content: center;
         text-decoration: none;
         }
+<<<<<<< HEAD
 
         /* remove this bad boy too */
+=======
+  
+    }    /* remove this bad boy too */
+>>>>>>> 929d07501006f07734d73c1592105e01ef83d878
     
     .left-grid{
         text-align: center;
