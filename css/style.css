@@ -8,7 +8,7 @@ body {
     font-size: 30px;
     /*justify-content: space-evenly;  /* so as this */
     
-/* add    overflow-x: hidden; /* to disable horizontal scroll */
+    overflow-x: hidden; /* to disable horizontal scroll */
 
 }
 @font-face {
@@ -62,18 +62,14 @@ body {
 
     display: flex;  /* this is the flex property we're dealing with */
     flex-direction: row;
-    /* so add justify-content rule here */
-
+    justify-content: center;
     font-size: 30px;
     margin: 0;
-    padding: 2em;   /* remove this padding as well */
 }
 .left-grid {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 3rem;    /* remove the padding this would be taken care of by justify-content rule */
-    margin-left: 4rem;     /* so as this */
 }
 .btn-primary {
     background-color: darkorchid;
@@ -96,7 +92,6 @@ body {
 }
 .right-grid {
     display: flex;
-    padding-right: .5em; /* remove this as well for the same reason */
 }
 .btn-primary {
     background-color: green;
@@ -107,7 +102,6 @@ body {
 }
 .btn-primary p {
     font-size: 18px;
-    padding: .2em ,2em; /* remove this as well or leave it*/
     margin: 0;
 } 
 .btn-link {
@@ -117,8 +111,8 @@ body {
 .j-image {
     width: 400px;
     height: 400px;
-/* add  padding: 1px; /* to allow image fit properly */
-/* add  align-self: center; /* so image would stay center and be leveled with the text */ 
+    padding: 1px; /* to allow image fit properly */
+    align-self: center; /* so image would stay center and be leveled with the text */ 
 }
 .side-nav {
     height: 100%;
@@ -156,7 +150,7 @@ body {
     padding: 20px;
 }
 
-/* add
+
 .toggle-btn {
     display: none;
 }
@@ -167,7 +161,7 @@ body {
     .side-nav a {font-size: 18px;} 
 }
 
-@media  only screen and (max-width: 960px) { /* change this to 1125px as you made use of a larger font size in your brand name */
+@media  only screen and (max-width: 1125px) { /* change this to 1125px as you made use of a larger font size in your brand name */
     .j-image {
         width: 250px;
         height: 250px;
@@ -189,7 +183,7 @@ body {
         text-decoration: none;
         }
 
-    }    /* remove this bad boy too */
+        /* remove this bad boy too */
     
     .left-grid{
         text-align: center;
@@ -208,6 +202,5 @@ body {
     }
     .btn-primary {
         text-align: center;
-        margin-right: 2.5rem; /* remove this too */
     }
 }
