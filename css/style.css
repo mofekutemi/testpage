@@ -6,8 +6,7 @@ body {
     padding: .15em;
     font-size: 30px;
     justify-content: space-evenly; 
-    
-    overflow-x: hidden;
+    overflow-x: hidden; /* to disable horizontal scroll */
 
 }
 @font-face {
@@ -62,15 +61,13 @@ body {
     display: flex;  
     flex-direction: row;
     justify-content: center;
-
     font-size: 30px;
-    margin: 0; 
+    margin: 0;
 }
 .left-grid {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 4rem;     
 }
 .btn-primary {
     background-color: darkorchid;
@@ -92,6 +89,7 @@ body {
     padding-top: 0;
 }
 .right-grid {
+    display: flex;
 }
 .btn-primary {
     background-color: green;
@@ -102,7 +100,6 @@ body {
 }
 .btn-primary p {
     font-size: 18px;
-    padding: .2em ,2em; /* remove this as well or leave it*/
     margin: 0;
 } 
 .btn-link {
@@ -112,8 +109,8 @@ body {
 .j-image {
     width: 400px;
     height: 400px;
-    padding: 1px;
-    align-self: center;
+    padding: 1px; /* to allow image fit properly */
+    align-self: center; /* so image would stay center and be leveled with the text */
 }
 .side-nav {
     height: 100%;
@@ -181,7 +178,6 @@ body {
         justify-content: center;
         text-decoration: none;
         }
-  
     
     .left-grid{
         text-align: center;
