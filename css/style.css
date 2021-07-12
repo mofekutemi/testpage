@@ -4,9 +4,11 @@ body {
     height: 100%;
     margin: 0;
     padding: .15em;
-    flex-direction: row;
+    /*flex-direction: row;    /* this isn't meant to be here because it contains no flex property */
     font-size: 30px;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;  /* so as this */
+    
+/* add    overflow-x: hidden; /* to disable horizontal scroll */
 
 }
 @font-face {
@@ -57,18 +59,21 @@ body {
 .jumbotron {
     width: 100%;
     height: 100vh;
-    display: flex;
+
+    display: flex;  /* this is the flex property we're dealing with */
     flex-direction: row;
+    /* so add justify-content rule here */
+
     font-size: 30px;
     margin: 0;
-    padding: 2em;
+    padding: 2em;   /* remove this padding as well */
 }
 .left-grid {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 3rem;
-    margin-left: 4rem;
+    padding-left: 3rem;    /* remove the padding this would be taken care of by justify-content rule */
+    margin-left: 4rem;     /* so as this */
 }
 .btn-primary {
     background-color: darkorchid;
@@ -91,7 +96,7 @@ body {
 }
 .right-grid {
     display: flex;
-    padding-right: .5em;
+    padding-right: .5em; /* remove this as well for the same reason */
 }
 .btn-primary {
     background-color: green;
@@ -102,7 +107,7 @@ body {
 }
 .btn-primary p {
     font-size: 18px;
-    padding: .2em ,2em;
+    padding: .2em ,2em; /* remove this as well or leave it*/
     margin: 0;
 } 
 .btn-link {
@@ -112,6 +117,8 @@ body {
 .j-image {
     width: 400px;
     height: 400px;
+/* add  padding: 1px; /* to allow image fit properly */
+/* add  align-self: center; /* so image would stay center and be leveled with the text */ 
 }
 .side-nav {
     height: 100%;
@@ -148,11 +155,19 @@ body {
     transition: margin-left .5s;
     padding: 20px;
 }
+
+/* add
+.toggle-btn {
+    display: none;
+}
+/* to hide button when in landscape mode */
+
 @media  screen and (max-height: 450px){
     .side-nav {padding-top: 15px;}
     .side-nav a {font-size: 18px;} 
 }
-@media  only screen and (max-width: 950px) {
+
+@media  only screen and (max-width: 960px) { /* change this to 1125px as you made use of a larger font size in your brand name */
     .j-image {
         width: 250px;
         height: 250px;
@@ -173,8 +188,8 @@ body {
         justify-content: center;
         text-decoration: none;
         }
-
-     }
+  
+    }    /* remove this bad boy too */
     
     .left-grid{
         text-align: center;
@@ -185,6 +200,7 @@ body {
         padding: 0;
     }
 }
+
 @media  only screen and (max-width: 600px) {
     .j-image {
         width: 200px;
@@ -192,6 +208,6 @@ body {
     }
     .btn-primary {
         text-align: center;
-        margin-right: 2.5rem;
+        margin-right: 2.5rem; /* remove this too */
     }
 }
