@@ -4,10 +4,8 @@ body {
     height: 100%;
     margin: 0;
     padding: .15em;
-    /*flex-direction: row;    /* this isn't meant to be here because it contains no flex property */
     font-size: 30px;
-    /*justify-content: space-evenly;  /* so as this */
-    
+    justify-content: space-evenly; 
     overflow-x: hidden; /* to disable horizontal scroll */
 
 }
@@ -60,7 +58,7 @@ body {
     width: 100%;
     height: 100vh;
 
-    display: flex;  /* this is the flex property we're dealing with */
+    display: flex;  
     flex-direction: row;
     justify-content: center;
     font-size: 30px;
@@ -112,7 +110,7 @@ body {
     width: 400px;
     height: 400px;
     padding: 1px; /* to allow image fit properly */
-    align-self: center; /* so image would stay center and be leveled with the text */ 
+    align-self: center; /* so image would stay center and be leveled with the text */
 }
 .side-nav {
     height: 100%;
@@ -150,11 +148,9 @@ body {
     padding: 20px;
 }
 
-
 .toggle-btn {
     display: none;
-}
-/* to hide button when in landscape mode */
+}  
 
 @media  screen and (max-height: 450px){
     .side-nav {padding-top: 15px;}
@@ -182,8 +178,6 @@ body {
         justify-content: center;
         text-decoration: none;
         }
-
-        /* remove this bad boy too */
     
     .left-grid{
         text-align: center;
