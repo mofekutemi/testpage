@@ -194,6 +194,7 @@ body {
     .j-image {
         width: 200px;
         height: 200px;
+        border-radius: 50%;
     }
     .btn-primary {
         text-align: center;
